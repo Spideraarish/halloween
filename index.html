@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <title>ANONYMOUS // ENCRYPTED NFC PAYLOAD</title>
+  
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="theme-color" content="#030405">
+  
+  <meta property="og:title" content="ANONYMOUS SYSTEM INFILTRATION">
+  <meta property="og:description" content="Proximity payload intercepted. Terminal exploit engaged.">
+
+  <!-- Scary Cyber-Horror Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Orbitron:wght@800;900&family=Rubik+Glitch&family=JetBrains+Mono:wght@400;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- CRT Visual Filters -->
+  <div class="crt-overlay"></div>
+  <div class="crt-vignette"></div>
+
+  <!-- Top Status Bar -->
+  <header class="status-bar">
+    <div class="status-brand">
+      <span class="status-indicator"></span>
+      <span>NODE_0x77 // NFC_INTERFACE</span>
+    </div>
+    <button class="audio-toggle-btn" id="audioToggleBtn">[AUDIO: ON]</button>
+  </header>
+
+  <!-- Fullscreen Terminal -->
+  <main class="terminal-fullscreen" id="terminalMain">
+
+    <!-- Anonymous Emblem Header -->
+    <div class="anonymous-banner">
+      <svg class="anonymous-logo-svg" viewBox="0 0 100 100">
+        <!-- Laurel Wreath Left -->
+        <path d="M22 68 C 12 55, 12 35, 26 22 C 24 28, 25 35, 30 40 C 24 45, 23 55, 28 62 Z" stroke-width="1.8"/>
+        <!-- Laurel Wreath Right -->
+        <path d="M78 68 C 88 55, 88 35, 74 22 C 76 28, 75 35, 70 40 C 76 45, 77 55, 72 62 Z" stroke-width="1.8"/>
+        <!-- Headless Suit Collar & Tie -->
+        <path d="M38 52 L50 64 L62 52 L57 44 L43 44 Z" stroke-width="1.8"/>
+        <path d="M48 62 L48 84 L52 84 L52 62 Z" stroke-width="1.8"/>
+        <!-- Question Mark Head -->
+        <path d="M44 26 C 44 21, 56 21, 56 27 C 56 32, 50 33, 50 37" stroke-width="2.2" stroke-linecap="round"/>
+        <circle cx="50" cy="42" r="1.4" fill="currentColor"/>
+      </svg>
+
+      <div class="terminal-prompt-line">
+        <span class="prompt-prefix">root@anonymous:~#</span>
+        <span class="prompt-command">./infiltrate_device.sh --mode=deep-scan</span>
+      </div>
+    </div>
+
+    <!-- Initial Touch Authorization Panel -->
+    <div class="auth-trigger-panel" id="authTriggerPanel">
+      <div class="auth-beacon-id">[NFC HARDWARE TAG: ISO-14443-A // 13.56 MHz CAPTURED]</div>
+      <div class="auth-callout">
+        <span>></span>
+        <span>TAP SCREEN TO INITIATE INFILTRATION</span>
+        <span class="cursor-blink"></span>
+      </div>
+      <div class="auth-subtext">Tap anywhere to engage audio & payload (iPhone: ensure Silent switch is OFF)</div>
+    </div>
+
+    <!-- Live Execution Terminal Logs -->
+    <div class="terminal-output" id="terminalOutput">
+      <!-- Live logs injected sequentially -->
+    </div>
+
+    <div id="scrollAnchor" style="height: 1px; width: 100%;"></div>
+
+  </main>
+
+  <!-- ====================================================================
+       MENACING CYBER SKULL STAGE (PRE-DECRYPTION INTERCEPT)
+       ==================================================================== -->
+  <section class="laughing-skull-stage" id="laughingSkullStage">
+    <div class="skull-badge-tag">[ CRITICAL ROOT COMPROMISE // OVERRIDE ACTIVE ]</div>
+    
+    <div class="skull-anim-wrapper">
+      <svg class="cyber-skull-svg" viewBox="0 0 120 140">
+        <defs>
+          <!-- Crimson Glow Filter -->
+          <filter id="crimsonGlow" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur stdDeviation="3" result="blur" />
+            <feMerge>
+              <feMergeNode in="blur" />
+              <feMergeNode in="SourceGraphic" />
+            </feMerge>
+          </filter>
+        </defs>
+
+        <!-- Upper Cranium Structure -->
+        <g id="skullUpper" class="skull-upper">
+          <!-- Forehead & Temples with Aggressive Angles -->
+          <path d="M24 60 C 22 25, 98 25, 96 60 C 96 74, 88 82, 80 88 L 40 88 C 32 82, 24 74, 24 60 Z" stroke="#00ff66" stroke-width="2.6" fill="#040806"/>
+          
+          <!-- Cyber Circuit Traces across Cranium -->
+          <path d="M40 30 L50 42 L70 42 L80 30" stroke="#00ff66" stroke-width="1.4" stroke-dasharray="3,2" fill="none" opacity="0.75"/>
+          <path d="M60 26 L60 42" stroke="#00ff66" stroke-width="1.4" fill="none"/>
+          <path d="M30 46 L42 54" stroke="#ff3355" stroke-width="1.4" fill="none"/>
+          <path d="M90 46 L78 54" stroke="#ff3355" stroke-width="1.4" fill="none"/>
+
+          <!-- Cheekbone Contours -->
+          <path d="M26 68 C 32 72, 34 80, 38 86" stroke="#00ff66" stroke-width="2" fill="none"/>
+          <path d="M94 68 C 88 72, 86 80, 82 86" stroke="#00ff66" stroke-width="2" fill="none"/>
+
+          <!-- Menacing Angular Eye Sockets -->
+          <polygon points="34 52, 50 56, 46 70, 32 66" fill="#020304" stroke="#ff3355" stroke-width="1.8"/>
+          <polygon points="86 52, 70 56, 74 70, 88 66" fill="#020304" stroke="#ff3355" stroke-width="1.8"/>
+
+          <!-- Glowing Crimson Pupil Lasers -->
+          <circle cx="41" cy="61" r="4.5" fill="#ff1133" filter="url(#crimsonGlow)" class="skull-eye-laser"/>
+          <circle cx="79" cy="61" r="4.5" fill="#ff1133" filter="url(#crimsonGlow)" class="skull-eye-laser"/>
+
+          <!-- Aggressive Nasal Cavity -->
+          <polygon points="60 66, 55 78, 65 78" fill="#00ff66"/>
+
+          <!-- Sharp Upper Cyber Fangs / Teeth -->
+          <polygon points="42 88, 44 96, 46 88" fill="#ff3355"/>
+          <rect x="47" y="88" width="5" height="9" fill="#00ff66" rx="1"/>
+          <rect x="54" y="88" width="5" height="10" fill="#00ff66" rx="1"/>
+          <rect x="61" y="88" width="5" height="10" fill="#00ff66" rx="1"/>
+          <rect x="68" y="88" width="5" height="9" fill="#00ff66" rx="1"/>
+          <polygon points="74 88, 76 96, 78 88" fill="#ff3355"/>
+        </g>
+
+        <!-- Articulated Lower Jaw (Animates Laughing Up & Down) -->
+        <g id="skullJaw" class="skull-jaw">
+          <!-- Mandible Bone -->
+          <path d="M40 96 L 43 118 C 48 126, 72 126, 77 118 L 80 96 Z" stroke="#00ff66" stroke-width="2.4" fill="#040806"/>
+          <!-- Sharp Interlocking Lower Fangs & Teeth -->
+          <polygon points="44 96, 46 89, 48 96" fill="#ff3355"/>
+          <rect x="49" y="96" width="5" height="8" fill="#00ff66" rx="1"/>
+          <rect x="56" y="96" width="4" height="9" fill="#00ff66" rx="1"/>
+          <rect x="62" y="96" width="5" height="8" fill="#00ff66" rx="1"/>
+          <polygon points="72 96, 74 89, 76 96" fill="#ff3355"/>
+          <!-- Chin Circuit Accent -->
+          <line x1="60" y1="112" x2="60" y2="122" stroke="#ff3355" stroke-width="1.8"/>
+        </g>
+      </svg>
+    </div>
+
+    <div class="skull-laugh-text">HA HA HA HA HA</div>
+    <div class="skull-subtext">[ HOSTAGE EXPLOIT VERIFIED // INJECTING TRANSMISSION ]</div>
+  </section>
+
+  <!-- ====================================================================
+       FULLSCREEN CIPHER DECRYPTION WALL TAKEOVER
+       ==================================================================== -->
+  <section class="fullscreen-cipher-wall" id="fullscreenCipherWall">
+    
+    <!-- Background Matrix Canvas for the Decryption Screen -->
+    <canvas id="matrixCanvasWall"></canvas>
+
+    <div class="cipher-content-center">
+      
+      <div class="cipher-status-eyebrow">
+        <span>[ TRANSMISSION DECRYPT COMPLETE ]</span>
+      </div>
+
+      <!-- Hero Typography Line 1 -->
+      <h1 class="hero-scramble-headline" id="heroHeadline"></h1>
+
+      <!-- Hero Typography Line 2 -->
+      <h2 class="hero-scramble-subline" id="heroSubline"></h2>
+
+      <!-- Anonymous Creed -->
+      <div class="anonymous-creed-box" id="anonymousCreedBox">
+        We are Anonymous.<br>
+        We are Legion.<br>
+        We do not forgive.<br>
+        We do not forget.<br>
+        Expect us.
+      </div>
+
+      <!-- Instagram Hero Link -->
+      <div class="insta-reveal-container" id="instaRevealContainer">
+        <a class="insta-hacker-button" href="https://instagram.com/spider_aarish" target="_blank" rel="noopener noreferrer">
+          <div class="insta-hacker-left">
+            <span>></span>
+            <span>FOLLOW: @spider_aarish</span>
+          </div>
+          <span>[OPEN ↗]</span>
+        </a>
+
+        <button class="replay-button-terminal" id="replayBtn">
+          $ ./prank_a_friend.sh
+        </button>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- Scripts -->
+  <script src="config.js"></script>
+  <script src="audio.js"></script>
+  <script src="hacker.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,12 @@
+.DS_Store
+.agent
+.agents
+.gemini
+.gsd
+.kombai
+adapters
+scripts
+GSD-STYLE.md
+PROJECT_RULES.md
+VERSION
+model_capabilities.yaml
